@@ -1,0 +1,216 @@
+RewriteEngine On
+ErrorDocument 404 https://www.fratnow.com/404.php
+
+
+
+# Canonical https/www
+<IfModule mod_rewrite.c>
+	RewriteCond %{HTTPS} off
+	RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	
+	RewriteCond %{HTTP_HOST} !^www\. [NC]
+	RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	
+</IfModule>
+
+
+
+
+Redirect 301 /order-a-kit.html https://www.fratnow.com/order-a-test-kit.php
+Redirect 301 /information-on-frat-sample.php https://www.fratnow.com/how-to-send-samples.php
+Redirect 301 /intestinal-absorption-of-dietary-folates.html https://autism.fratnow.com/blog/intestinal-absorption-of-dietary-folates/
+Redirect 301 /blog/sensory-issues-in-autism.html https://autism.fratnow.com/blog/sensory-issues-in-autism/
+Redirect 301 /a-comprehensive-introduction-to-autism-spectrum-disorder.html  https://autism.fratnow.com/blog/a-comprehensive-introduction-to-autism-spectrum-disorder/
+Redirect 301 /activities-to-do-with-your-autistic-children.html  https://autism.fratnow.com/blog/activities-to-do-with-your-autistic-children/
+Redirect 301 /advice-for-parents-with-autistic-children.html https://autism.fratnow.com/blog/advice-for-parents-with-autistic-children/
+Redirect 301 /autism-and-social-anxiety-an-overview.html https://autism.fratnow.com/blog/autism-and-social-anxiety-an-overview/
+Redirect 301 /autism-awareness-corner.html https://autism.fratnow.com/blog/
+Redirect 301 /autisticchildren.html https://www.fratnow.com
+Redirect 301 /cerebral-folate-deficiency.html  https://www.fratnow.com
+Redirect 301 /cerebral-folate-deficiency-an-overview.html https://autism.fratnow.com/blog/cerebral-folate-deficiency-an-overview/
+Redirect 301 /cerebral-folate-deficiency-syndrome.html https://autism.fratnow.com/blog/cerebral-folate-deficiency-syndrome/
+Redirect 301 /education-and-employment-opportunities-for-people-with-autism.html https://autism.fratnow.com/blog/education-and-employment-opportunities-for-people-with-autism/
+Redirect 301 /faqs.html https://www.fratnow.com/faqs.php 
+Redirect 301 /folate-and-folic-acid.html https://www.fratnow.com
+Redirect 301 /folate-and-the-brain.html https://www.fratnow.com
+Redirect 301 /folate-transport-systems-folate-receptors.html https://autism.fratnow.com/blog/folate-transport-systems-folate-receptors/
+Redirect 301 /folate-transport-systems-transmembrane-carriers.html https://autism.fratnow.com/blog/folate-transport-systems-i-transmembrane-carriers/
+Redirect 301 /Frat.html https://www.fratnow.com
+Redirect 301 /how-do-i-know-my-child-may-be-on-the-autism-spectrum.html  https://autism.fratnow.com/blog/how-do-i-know-my-child-may-be-on-the-autism-spectrum/
+Redirect 301 /importance-of-frat-in-early-intervention-in-autism.html https://autism.fratnow.com/blog/importance-of-frat-in-early-intervention-in-autism/
+Redirect 301 /importance-of-vitamin-b-9-folate-for-better-brain-development-in-fetuses.html https://autism.fratnow.com/blog/importance-of-vitamin-b9-folate-for-better-brain-development-in-fetuses/
+Redirect 301 /index.html https://www.fratnow.com
+Redirect 301 /information-on-frat.html https://www.fratnow.com
+Redirect 301 /information-on-frat-sample.html https://www.fratnow.com/how-to-send-samples.php
+Redirect 301 /insurance-coverage-for-autism.html  https://autism.fratnow.com/blog/insurance-coverage-for-autism/
+Redirect 301 /intestinal-absorption-of-dietary-folates.html https://autism.fratnow.com/blog/intestinal-absorption-of-dietary-folates/
+Redirect 301 /new-research-findings-on-autism.html  https://autism.fratnow.com/blog/new-research-findings-on-autism/
+Redirect 301 /news.html https://www.fratnow.com/publication.php
+Redirect 301 /order-a-kit.html https://www.fratnow.com/order-a-test-kit.php
+Redirect 301 /parents-corner.html https://www.fratnow.com
+Redirect 301 /physiciansaresaying.html https://www.fratnow.com
+Redirect 301 /pregnancy-and-neuraltube-deficiency.html https://www.fratnow.com
+Redirect 301 /publication.html https://www.fratnow.com/publication.php
+Redirect 301 /research-and-development.html https://www.fratnow.com
+Redirect 301 /subfertility.html https://www.fratnow.com
+Redirect 301 /the-folate-factor-in-autism-understanding-the-link-between-folate-and-autism-spectrum-disorder.html https://autism.fratnow.com/blog/the-folate-factor-in-autism-understanding-the-link-between-folate-and-autism-spectrum-disorder/
+Redirect 301 /the-rise-of-autism-in-the-last-two-decades.html https://autism.fratnow.com/blog/the-rise-of-autism-in-the-last-two-decades/
+Redirect 301 /what-is-frat-and-the-role-frat-plays-in-autism.html  https://autism.fratnow.com/blog/what-is-frat-and-the-role-frat-plays-in-autism/
+Redirect 301 /what-role-does-folate-receptors-and-vitamin-b9-play-in-autism.html https://autism.fratnow.com/blog/what-role-does-folate-receptors-and-vitamin-b9-play-in-autism/
+Redirect 301 /activities-to-do-with-your-autistic-children.html https://autism.fratnow.com/blog/activities-to-do-with-your-autistic-children/
+Redirect 301 /advice-for-parents-with-autistic-children.html https://autism.fratnow.com/blog/advice-for-parents-with-autistic-children/
+Redirect 301 /autism.html https://www.fratnow.com
+Redirect 301 /autism-and-social-anxiety-an-overview.html  https://autism.fratnow.com/blog/autism-and-social-anxiety-an-overview/
+Redirect 301 /autism-awareness-corner.html https://autism.fratnow.com/blog/
+Redirect 301 /autisticchildren.html https://www.fratnow.com
+Redirect 301 /blog/autoantibodies-what-are-they-and-what-is-their-role-in-overall-health.html https://autism.fratnow.com/blog/autoantibodies-what-are-they-and-what-is-their-role-in-overall-health/
+Redirect 301 /blog/benefits-of-early-intervention-in-autism.html https://autism.fratnow.com/blog/benefits-of-early-intervention-in-autism/
+Redirect 301 /blog/complete-guide-to-autism-tests.html https://autism.fratnow.com/blog/complete-guide-to-autism-tests/
+Redirect 301 /blog/folate-homeostasis-membrane-transporters.html https://autism.fratnow.com/blog/folate-homeostasis-membrane-transporters/
+Redirect 301 /blog/folate-receptor-autoantibodies-and-depression.html https://autism.fratnow.com/blog/folate-receptor-autoantibodies-and-depression/
+Redirect 301 /blog/folate-receptor-autoantibodies-in-families-with-autistic-individuals.html https://autism.fratnow.com/blog/folate-receptor-autoantibodies-in-families-with-autistic-individuals/
+Redirect 301 /blog/social-issues-in-autism.html https://autism.fratnow.com/blog/social-issues-in-autism/
+Redirect 301 /blog/the-neurotypical-brain-versus-the-autistic-brain-brain-structure-in-asd.html https://autism.fratnow.com/blog/the-neurotypical-brain-versus-the-autistic-brain-brain-structure-in-asd/
+Redirect 301 /blog/the-neurotypical-brain-versus-the-autistic-brain-neurotypical-brain-chemistry.html https://autism.fratnow.com/blog/the-neurotypical-brain-versus-the-autistic-brain-neurotypical-brain-chemistry/
+Redirect 301 /blog/the-neurotypical-brain-versus-the-autistic-brain-neurotypical-brain-structure.html https://autism.fratnow.com/blog/the-neurotypical-brain-versus-the-autistic-brain-neurotypical-brain-structure/
+Redirect 301 /cerebral-folate-deficiency.html https://www.fratnow.com
+Redirect 301 /cerebral-folate-deficiency-an-overview.html https://autism.fratnow.com/blog/cerebral-folate-deficiency-an-overview/
+Redirect 301 /education-and-employment-opportunities-for-people-with-autism.html https://autism.fratnow.com/blog/education-and-employment-opportunities-for-people-with-autism/
+Redirect 301 /folate-and-folic-acid.html https://www.fratnow.com
+Redirect 301 /folate-and-the-brain.html https://www.fratnow.com
+Redirect 301 /importance-of-frat-in-early-intervention-in-autism.html https://autism.fratnow.com/blog/importance-of-frat-in-early-intervention-in-autism/
+Redirect 301 /index.html https://www.fratnow.com
+Redirect 301 /intestinal-absorption-of-dietary-folates.html https://autism.fratnow.com/blog/intestinal-absorption-of-dietary-folates/
+Redirect 301 /parenting-strategies-for-children-with-autism.html https://autism.fratnow.com/blog/parenting-strategies-for-children-with-autism/
+Redirect 301 /the-folate-factor-in-autism-understanding-the-link-between-folate-and-autism-spectrum-disorder.html https://autism.fratnow.com/blog/what-role-does-folate-receptors-and-vitamin-b9-play-in-autism/
+Redirect 301 /what-has-autism-taught-me-as-a-parent.html https://autism.fratnow.com/blog/what-has-autism-taught-me-as-a-parent/
+Redirect 301 /what-role-does-folate-receptors-and-vitamin-b9-play-in-autism.html https://autism.fratnow.com/blog/what-role-does-folate-receptors-and-vitamin-b9-play-in-autism/
+Redirect 301 /why-is-early-intervention-necessary-in-autism.html https://autism.fratnow.com/blog/why-is-early-intervention-necessary-in-autism/
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php80” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php80 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+
+
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+	
+# Images
+	ExpiresByType image/jpeg "access plus 1 year"
+	ExpiresByType image/gif "access plus 1 year"
+	ExpiresByType image/png "access plus 1 year"
+	ExpiresByType image/webp "access plus 1 year"
+	ExpiresByType image/svg+xml "access plus 1 year"
+	ExpiresByType image/x-icon "access plus 1 year"
+	
+# Video
+	ExpiresByType video/mp4 "access plus 1 year"
+	ExpiresByType video/mpeg "access plus 1 year"
+	
+# CSS, JavaScript
+	ExpiresByType text/css "access plus 1 month"
+	ExpiresByType text/javascript "access plus 1 month"
+	ExpiresByType application/javascript "access plus 1 month"
+	
+# Others
+	ExpiresByType application/pdf "access plus 1 month"
+	ExpiresByType application/x-shockwave-flash "access plus 1 month"
+	
+</IfModule>
+
+
+
+
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresDefault                                      "access plus 1 month"
+	
+# CSS
+	ExpiresByType text/css                              "access plus 1 year"
+	
+# Data interchange
+	ExpiresByType application/atom+xml                  "access plus 1 hour"
+	ExpiresByType application/rdf+xml                   "access plus 1 hour"
+	ExpiresByType application/rss+xml                   "access plus 1 hour"
+	
+	ExpiresByType application/json                      "access plus 0 seconds"
+	ExpiresByType application/ld+json                   "access plus 0 seconds"
+	ExpiresByType application/schema+json               "access plus 0 seconds"
+	ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
+	ExpiresByType application/xml                       "access plus 0 seconds"
+	ExpiresByType text/xml                              "access plus 0 seconds"
+	
+# Favicon (cannot be renamed!) and cursor images
+	ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
+	ExpiresByType image/x-icon                          "access plus 1 week"
+	
+# HTML - Behält die Website eine Stunde im Cache, neues wird erst nach Ablauf einer Stunde
+# angezeigt. Wenn nicht gewuenscht, bei 3600 eine Null eintragen
+	ExpiresByType text/html                             "access plus 3600 seconds"
+	
+# JavaScript
+	ExpiresByType application/javascript                "access plus 1 year"
+	ExpiresByType application/x-javascript              "access plus 1 year"
+	ExpiresByType text/javascript                       "access plus 1 year"
+	
+# Manifest files
+	ExpiresByType application/manifest+json             "access plus 1 week"
+	ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+	ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+	
+# Media files
+	ExpiresByType audio/ogg                             "access plus 1 month"
+	ExpiresByType image/bmp                             "access plus 1 month"
+	ExpiresByType image/gif                             "access plus 1 month"
+	ExpiresByType image/jpeg                            "access plus 1 month"
+	ExpiresByType image/png                             "access plus 1 month"
+	ExpiresByType image/svg+xml                         "access plus 1 month"
+	ExpiresByType image/webp                            "access plus 1 month"
+	ExpiresByType video/mp4                             "access plus 1 month"
+	ExpiresByType video/ogg                             "access plus 1 month"
+	ExpiresByType video/webm                            "access plus 1 month"
+	
+# Web fonts
+	
+# Embedded OpenType (EOT)
+	ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+	ExpiresByType font/eot                              "access plus 1 month"
+	
+# OpenType
+	ExpiresByType font/opentype                         "access plus 1 month"
+	
+# TrueType
+	ExpiresByType application/x-font-ttf                "access plus 1 month"
+	
+# Web Open Font Format (WOFF) 1.0
+	ExpiresByType application/font-woff                 "access plus 1 month"
+	ExpiresByType application/x-font-woff               "access plus 1 month"
+	ExpiresByType font/woff                             "access plus 1 month"
+	
+# Web Open Font Format (WOFF) 2.0
+	ExpiresByType application/font-woff2                "access plus 1 month"
+	
+# Other
+	ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
+</IfModule>
+
+
+
+<IfModule mod_headers.c>
+    # Cache images for 1 week
+    <FilesMatch "\.(jpg|jpeg|png|gif)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+
+    # Cache CSS files for 1 week
+    <FilesMatch "\.css$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+</IfModule>
+
+

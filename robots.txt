@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.fratnow.com/sitemap.xml
+Disallow: /staging/
